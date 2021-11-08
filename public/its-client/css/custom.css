@@ -1,0 +1,424 @@
+.btn-tinting {
+  background: linear-gradient(
+          90deg, #46c1c9 0%, #82d4b0 100%);
+  transition: .4s;
+  position: relative;
+  z-index: 1;
+}
+.btn-tinting:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0;
+  background: linear-gradient(
+          90deg, #82d4b0 0%, #46c1c9 100%);
+  transition: .3s;
+}
+
+.btn-tinting:hover {
+  box-shadow: unset;
+}
+
+.btn-tinting:hover::before {
+  opacity: 1;
+}
+
+.item__info-color {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.item__info-color.active {
+  display: flex;
+}
+
+.color-block-wrapper .color-block {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.color-block-wrapper .color-name {
+  font-size: 16px;
+  color: #2B2B2B;
+  margin: 0 10px;
+}
+.color-block-wrapper .color-name {
+  font-size: 16px;
+  color: #2B2B2B;
+}
+
+.color-block-wrapper .color-delete {
+  font-size: 36px;
+  line-height: 20px;
+  color: red;
+  border: none;
+  background: transparent;
+}
+
+.product-choice-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.product-choice-checkbox a {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.product-choice-checkbox a.active .checkbox-block{
+  background: #F75B5B;
+  border: 1px solid #F75B5B;
+}
+.product-choice-checkbox a:last-child {
+  margin-right: 0;
+}
+
+.product-choice-checkbox .checkbox-block {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #C4C4C4;
+  background-color: transparent;
+  border-radius: 4px;
+  transition: .2s;
+}
+
+.product-choice-checkbox .checkbox-text {
+  padding-top: 2px;
+  margin-left: 2px;
+  font-size: 16px;
+  color: #2B2B2B;
+}
+
+.item__info-options .card-product__content-head {
+  justify-content: center;
+  align-items: center;
+}
+.item__info-price {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  font-family: 'Stem-Medium';
+}
+
+.item__info-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item__info-buttons button {
+  width: 165px;
+}
+.item__info-buttons .btn-tinting {
+  margin-bottom: 8px;
+}
+
+
+.modal-change-color .modal-dialog {
+  max-width: 90%;
+}
+.modal-color-change {
+  margin: 10px 30px;
+}
+.modal-color-change ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-color-change ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 74px;
+  position: relative;
+}
+
+.item__info-size .checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item__info-size .checkbox-group label{
+  margin-right: 10px;
+}
+.item__info-size .checkbox-group .label{
+ font-size: 15px;
+  margin-left: 2px;
+}
+.item__info-size .checkbox-group label:last-child {
+  margin-right: 0;
+}
+
+.modal-color-change ul li .color-free {
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ff0000;
+  font-size: 11px;
+}
+
+.modal-color-change ul li .color-name {
+ font-size: 14px;
+}
+.modal-color-change ul li .color-name.active {
+ font-weight: bold;
+  color: #ff0000;
+}
+
+.modal-color-change ul li .color {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border-radius: 0px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.modal-color-change ul li .color.active {
+  border-radius: 10px;
+  border: 3px solid #ff0000;
+}
+
+.basket-content__left p.color-product-current {
+  display: flex;
+  align-items: center;
+}
+.basket-content__left p.color-product-current span {
+  width: 40px;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+.card-product__head-content .btn-tinting {
+  padding: 0 40px;
+  background: linear-gradient(
+          90deg, #46c1c9 0%, #82d4b0 100%);
+  transition: .4s;
+  position: relative;
+  z-index: 1;
+}
+.card-product__head-content .btn-tinting:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0;
+  background: linear-gradient(
+          90deg, #82d4b0 0%, #46c1c9 100%);
+  transition: .3s;
+}
+
+.card-product__head-content .btn-tinting:hover {
+  box-shadow: unset;
+}
+
+.card-product__head-content .btn-tinting:hover::before {
+  opacity: 1;
+}
+
+.card-product__head-content.color-block {
+  display: flex;
+  align-items: center;
+}
+
+.card-product__content-price .price-block {
+  display: flex;
+  align-items: center;
+}
+.card-product__content-price .price-convert {
+  font-size: 16px;
+}
+
+.color-block__choice {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.color-block__choice .delete-color {
+  display: none;
+  border: none;
+  background: transparent;
+  margin-left: 8px;
+}
+.color-block__choice .delete-color.active {
+  display: block;
+}
+
+.color-block__choice .delete-color span {
+  font-size: 31px;
+  color: #414D5B;
+  position: relative;
+  top: 3px;
+  transition: .3s;
+}
+
+.color-block__choice .delete-color:hover span {
+  color: #F75B5B;
+}
+
+.color-block__choice .choice-text{
+  font-size: 20px;
+  color: #F75B5B;
+}
+
+.color-block__choice .choice-color {
+  display: block;
+  height: 46px;
+  width: 46px;
+  border-radius: 10px;
+}
+
+.calc-form label {
+  color: #212529;
+}
+
+.calc-form select {
+  height: 30px;
+  width: 60px;
+  border: none;
+  background: white;
+  padding: 0 5px;
+}
+
+.calc-form button {
+  padding: 0 15px;
+}
+
+.calc-form .input {
+  background: #fff;
+}
+
+.calc-result strong {
+    display: inline;
+}
+
+.card-product__content-tabs .nav-tabs .nav-item .nav-link.nav-link__consumption
+{
+ color: #46c1c9;
+}
+
+.card-product__content-tabs .nav-tabs .nav-item .nav-link.nav-link__consumption.active
+{
+ color: #078891;
+}
+
+@media screen and (max-width: 1180px) {
+  .item__info-options .card-product__content-head .quantity {
+  margin: 0;
+  }
+  .card-product__head-content .btn-tinting {
+    padding: 0 30px;
+  }
+  .modal-color-change ul {
+    justify-content: space-between;
+  }
+  .item__info-size .checkbox-group {
+    flex-wrap: wrap;
+  }
+  .item__info-size .checkbox-group label{
+    margin: 0 5px 5px 5px;
+  }
+  .item__info-size .checkbox-group label:last-child {
+    margin: 0 5px 5px 5px;
+  }
+  .product-choice-checkbox {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 767px) {
+  .card-product__head-content .btn-tinting {
+    padding: 0 15px;
+  }
+
+  .card-product__head-docs a {
+    margin-top: 15px;
+  }
+
+  .color-block__choice {
+    margin-left: 8px;
+  }
+  .color-block__choice .delete-color {
+    margin-left: 3px;
+  }
+  .color-block__choice .delete-color span{
+    font-size: 25px;
+  }
+  .color-block__choice .choice-text {
+    font-size: 16px;
+  }
+  .color-block__choice .choice-color {
+    height: 38px;
+    width: 38px;
+  }
+  .modal-change-color .modal-dialog {
+    max-width: initial;
+  }
+  .modal-color-change {
+    margin: 10px;
+  }
+  .modal-color-change ul li {
+    width: 70px;
+  }
+
+  .card-product__content-tabs .nav-tabs .nav-item .nav-link.nav-link__consumption
+  {
+    border: 2px solid #46c1c9;
+    transition: .4s;
+    position: relative;
+    z-index: 1;
+    color: #2B2B2B;
+  }
+
+  .card-product__content-tabs .nav-tabs .nav-item .nav-link.nav-link__consumption:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    border-radius: 8px;
+    background: linear-gradient(
+            90deg, #82d4b0 0%, #46c1c9 100%);
+    transition: .3s;
+  }
+
+  .card-product__content-tabs .nav-tabs .nav-item .nav-link.nav-link__consumption:hover::before {
+    opacity: 1;
+  }
+  .card-product__content-tabs .nav-tabs .nav-item .nav-link.nav-link__consumption.active {
+    color: #fff;
+    background: linear-gradient(
+            90deg, #82d4b0 0%, #46c1c9 100%);
+  }
+  .card-product__content-tabs .nav-tabs .nav-item .nav-link.nav-link__consumption.active:before {
+    opacity: 1;
+  }
+
+  .item__info-buttons button {
+    width: 100%;
+  }
+}

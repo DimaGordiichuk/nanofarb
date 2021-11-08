@@ -1,0 +1,50 @@
+{
+    "name": "sanmai/cdek-sdk-serializer",
+    "type": "library",
+    "description": "Сериализатор для СДЭК PHP SDK",
+    "homepage": "https://cdek-sdk.readthedocs.io/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Kopytko",
+            "email": "alexey@kopytko.com",
+            "homepage": "https://www.alexeykopytko.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "ext-SimpleXML": "*",
+        "ext-json": "*",
+        "ext-libxml": "*",
+        "doctrine/annotations": "^1.10.3",
+        "jms/serializer": "^3.11"
+    },
+    "conflict": {},
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.8",
+        "friendsofphp/php-cs-fixer": "^2.17",
+        "infection/infection": ">=0.10",
+        "phan/phan": ">=1",
+        "php-coveralls/php-coveralls": "^2.1",
+        "phpstan/phpstan": ">=0.10",
+        "sanmai/phpunit-legacy-adapter": "^6 || ^8",
+        "vimeo/psalm": ">=3.0.16"
+    },
+    "suggest": {
+        "ext-ctype": "For flexible attribute name handling"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "CdekSDK\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\CdekSDK\\": "tests/"
+        }
+    }
+}

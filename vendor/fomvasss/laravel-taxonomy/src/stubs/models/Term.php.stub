@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Models\Taxonomy;
+
+class Term extends \Fomvasss\Taxonomy\Models\Term
+{
+    /**
+     * It example you can delete :)
+     * Relation - Therm has many articles
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\MorphToMany
+     */
+    public function articles()
+    {
+        return $this->morphedByMany(Article::class, 'termable');
+    }
+}
